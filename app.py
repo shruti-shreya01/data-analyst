@@ -64,7 +64,7 @@ def main():
         if user_query:
             with st.spinner("Processing your query..."):
                 # Generating a prompt based on user input
-                prompt = f"Here is a preview of the dataset:\n{data.head().to_string(index=False)}\n\nUser's query: {user_query}"
+                prompt = f"Here is a preview of the dataset:\n{data.to_string(index=False)}\n\nUser's query: {user_query}"
                 messages = [
                     (
                         "system",
