@@ -75,7 +75,7 @@ def main():
 
                 # Generate response
                 ai_msg = llm.invoke(messages)
-                # st.write(f"LLM Response: {ai_msg.content}")
+                st.write(f"LLM Response: {ai_msg.content}")
 
         # Allow the user to download the dataset (if required)
         
